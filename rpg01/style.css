@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+header{
+    color: white;
+    background-color: rgb(61, 61, 255);
+    min-width: 200px;
+    height: 50px;
+    padding: 20px;
+}
+nav{
+    color: white;
+    background-color: rgb(61, 61, 255);
+    min-width: 200px;
+    padding: 20px;
+    box-shadow: 1px 1px 4px rgb(50, 22, 173);
+}
+nav > a{
+    color: rgb(221, 221, 255);
+    border-radius: 10px;
+}
+nav > a:hover{
+    background-color: rgb(34, 34, 216);
+}
+main{
+    min-width: 200px;
+    max-width: 1100px;
+    min-height: 600px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: auto;
+    text-align: center;
+}
+table{
+    margin: auto;
+    width: 100%;
+}
+table, td{
+    font-size: 1em;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+}
+input{
+    font-size: 1em;
+}
+select{
+    font-size: 1em;
+}
+#nivel{
+    min-width: 50px;
+    max-width: 55px;
+}
+#btn{
+    font-size: 1em;
+}
+#btnx{
+    font-size: 1em;
+    width: 1.5em;
+}
+.pp{
+    display: inline;
+    padding-right: 20px;
+    font-weight: bold;
+    background-color: yellow;
+}

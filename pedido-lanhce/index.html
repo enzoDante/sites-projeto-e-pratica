@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Faça seu pedido</h1>
+        <form action="">
+            <div class="content">
+                <label for="">Nome: </label>
+                <input id="nome" type="text">
+            </div>
+            <div class="content">
+                <label for="">Fone: </label>
+                <textarea name="textarea" cols="40" rows="5"></textarea>
+            </div>
+            <div class="content">
+                <label for="">Endereço: </label>
+                <input id="endereco" type="text">
+            </div>
+            <div class="sanduiche">
+                <label for="">Pedido</label>
+                <select name="" id="pedido">
+                    <option value="n001">Pedido Doidao 001</option>
+                    <option value="n002">Pedido Doidao 002</option>
+                    <option value="n003">Pedido Doidao 003</option>
+                    <option value="n004">Pedido Doidao 004</option>
+                </select>
+                <label for="">Pão</label>
+                <select name="" id="pao">
+                    <option value="pao1">Pão 1</option>
+                    <option value="pao2">Pão 2</option>
+                    <option value="pao3">Pão 3</option>
+                    <option value="pao4">Pão 4</option>
+                </select>
+                <label for="">Quantidade</label>
+                <input id="qtd" type="number">
+                <button type="button" onclick="adicionar()">Adicionar</button>
+            </div>
+        </form>
+        <div class="adicionados" id="tabela">
+            <div class="rowtabela">
+                <div class="item">
+                    <b>Quantidade</b>
+                </div>
+                <div class="item">
+                    <b>Sanduíche</b>
+                </div>
+                <div class="item">
+
+                </div>
+            </div>
+            <div class="rowtabela" id="1">
+                <div class="item">
+                    20
+                </div>
+                <div class="item">
+                    Sanduíche Brabissimo
+                </div>
+                <div class="botao">
+                    <button onclick="remover(this)">X</button>
+                </div>
+            </div>
+        </div>
+        <button class="enviar">Enviar</button>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

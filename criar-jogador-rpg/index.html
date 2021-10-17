@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grande projeto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CRIAÇÃO DE PERSONAGEM</h1>
+    </header>
+    <main>
+        <table id="tabela">
+            <tr>
+                <td colspan="4">PERSONAGENS</td>
+            </tr>
+            <tr>
+                <td>Jogador</td>
+                <td>Classe</td>
+                <td>Nome</td>
+                <td>Nível</td>
+            </tr>
+            <script src="javascript.js"></script>
+        </table><br>
+        <table>
+            <tr>
+                <td><input type="text" name="" class="in" id="jogador" placeholder="Jogador:"></td>
+                <td>
+                    <select name="" id="classes">
+                        <option value="c1">Guerreiro</option>
+                        <option value="c2">Mago</option>
+                        <option value="c3">Monge</option>
+                        <option value="c4">Paladino</option>
+                        <option value="c5">Bardo</option>
+                        <option value="c6">Bruxa</option>
+                        <option value="c7">Outros</option>
+                    </select>
+                </td>
+                <td><input type="text" name="" class="in" id="nome" placeholder="Nome:"></td>
+                <td><input type="number" name="" id="nivel" value="0" placeholder="Lvl:"></td>
+            </tr>
+        </table><br>
+        <button type="submit" onclick="add()">Adicionar personagem</button>
+        
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilda 1.5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Guilda</h1>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">outros</a>
+    </nav>
+    <main>
+        <h2>Criar personagem</h2><br>
+        <table id="tabela">
+            <tr>
+                <td>Jogador</td>
+                <td>Classe</td>
+                <td>Nome</td>
+                <td colspan="2">Nível</td>
+            </tr>
+        </table><br>
+        
+                <input type="text" name="jogador" id="jogador" placeholder="Jogador">
+                <select name="" id="classe">
+                    <option value="c1">Guerreito</option>
+                    <option value="c2">Espadachim</option>
+                    <option value="c3">Mago</option>
+                    <option value="c4">Feitiçeiro</option>
+                    <option value="c5">Bruxa</option>
+                    <option value="c6">Monge</option>
+                    <option value="c7">Bardo</option>
+                    <option value="c8">Outros</option>
+                </select>
+                <input type="text" name="" id="nome" placeholder="Nome">
+                <input type="number" name="" id="nivel" placeholder="Lvl">
+                <button type="submit" onclick="addplayer()" id="btn">Criar</button><br>
+        <p class="pp" id="pj"></p>
+        <p class="pp" id="pn"></p>
+        <p class="pp" id="pl"></p>
+        <script src="javascrip.js"></script>
+    </main>
+    
+</body>
+</html>

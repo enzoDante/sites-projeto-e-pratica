@@ -1,0 +1,94 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(255, 255, 0, 0.705);
+}
+header{
+    min-width: 200px;
+    background-color: yellow;
+    height: 40px;
+    padding: 20px;
+    font-size: 1.5em;
+}
+header > h1{
+    display: inline;
+}
+nav{
+    min-width: 200px;
+    background-color: yellow;
+    box-shadow: 1px 1px 4px rgba(201, 204, 20, 0.678);
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+}
+#navegar{
+    font-size: 1.2em;
+    width: 500px;
+    border-radius: 5px;
+}
+main{
+    min-width: 200px;
+    max-width: 1750px;
+    min-height: 600px;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(163, 163, 163, 0.568);
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#addElemento{
+    box-shadow: 1px 1px 4px black;
+    border-radius: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    transition: 200ms;
+
+}
+#addElemento:hover{
+    cursor: pointer;
+    background-color: rgba(156, 156, 156, 0.603);
+}
+#addElemento:hover > #center{
+    border-color: white;
+    color: white;
+}
+#addElemento:active{
+    cursor: default;
+    background-color: rgba(114, 114, 114, 0.603);
+}
+#center{
+    transition: 200ms;
+    text-align: center;
+    font-size: 1.5em;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 2.5em;
+}
+button#btnadd{
+    border-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.novo{
+    margin-right: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 20px;
+    display: inline-block;
+    width: 150px;
+    height: 120px;
+    transition: 200ms;
+    text-align: center;
+    padding-top: 90px;
+}

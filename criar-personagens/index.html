@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Criação de personagens</h1>
+    </header>
+    <main id="main">
+        <h1>Modelos de fichas</h1>
+        <div>
+            <label for="nome">Nome do personagem:</label>
+            <input type="text" name="nome" id="nome"><br>
+            <label for="classe">Classe do personagem:</label>
+            <input type="text" name="classe" id="classe"><br>
+            <label for="nivel">Nível:</label>
+            <input type="number" name="nivel" id="nivel"><br>
+            <textarea name="descricao" id="descricao" cols="70" rows="10" placeholder="Descrição do personagem"></textarea>
+        </div>
+        <button type="submit" onclick="criar()">Criar ficha</button>
+
+        <script src="javascript.js"></script>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+criar tabela com as devidas informações:
+
+	personagens
+Jogador | Classe   | Nome | Nível
+--------|----------|------|------
+@Dante  | Monge    |Dante |  10
+--------|----------|------|------
+@VA     |Espadachim|VA    |  10
