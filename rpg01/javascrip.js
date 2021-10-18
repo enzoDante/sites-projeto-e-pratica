@@ -1,3 +1,20 @@
+var corFundo = 1
+function darkmode(){
+    if(corFundo == 1){
+        document.body.style.backgroundColor = "#242424"
+        document.getElementById("mainfundo").style.backgroundColor = "#595959"
+        document.getElementById("mainfundo").style.borderColor = "white"
+
+        corFundo++
+    }else{
+        document.body.style.backgroundColor = "white"
+        document.getElementById("mainfundo").style.backgroundColor = "white"
+        document.getElementById("mainfundo").style.borderColor = "black"
+        corFundo--
+    }
+}
+
+
 function addplayer(){
     var tabela = document.getElementById("tabela")
 
@@ -14,23 +31,29 @@ function addplayer(){
     if(lvl < 0 || isNaN(lvl)){
         var l = `Digite o Lvl!`
         pl.innerHTML = l
+        document.getElementById("pl").style.backgroundColor = "yellow"
     }
     else{
         pl.innerHTML = ""
+        document.getElementById("pl").style.backgroundColor = "#ffffff"
     }
     if(nome == ""){
         var n = `Digite o nome do personagem!`
         pn.innerHTML = n
+        document.getElementById("pn").style.backgroundColor = "yellow"
     }
     else{
         pn.innerHTML = ""
+        document.getElementById("pn").style.backgroundColor = "#ffffff"
     }
     if(jogador == ""){
         var joga = `Digite o seu nome!`
         pjo.innerHTML = joga
+        document.getElementById("pj").style.backgroundColor = "yellow"
     }
     else{
         pjo.innerHTML = ""
+        document.getElementById("pj").style.backgroundColor = "#ffffff"
     }
     if(lvl >= 0 && jogador != "" && nome != ""){
         pl.innerHTML = ""
