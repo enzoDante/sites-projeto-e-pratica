@@ -18,9 +18,10 @@ function adicionar(){
         tabela.innerHTML += add
         document.getElementById("nome").value = ""
         document.getElementById("algo").value = ""
+        document.getElementById("algo").placeholder = "Diga alguma coisa"
     }
     else{
-        alert("Digite os dados abaixo!")
+        document.getElementById("algo").placeholder = "Digite alguma coisaa!!!"
     }
 
 }
