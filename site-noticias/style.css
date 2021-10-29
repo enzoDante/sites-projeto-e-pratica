@@ -37,7 +37,7 @@ main{
     background-color: white;
     min-width: 200px;
     max-width: 1700px;
-    min-height: 800px;
+    min-height: 700px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.233);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -50,7 +50,7 @@ main{
     padding: 20px;
     border-radius: 20px;
     background-color: #b1d0ff;
-    min-height: 700px;
+    max-width: 800px;
     text-align: center;
 }
 .ntc a{
@@ -58,15 +58,81 @@ main{
     align-items: center;
     margin: auto;
     min-width: 200px;
-    max-width: 900px;
     height: 50px;
     font-size: 1.5em;
     background-color: white;
     border-radius: 20px;
 }
+.criar #titulo{
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 15px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.253);
+}
+.criar #img{
+    margin: 20px;
+    display: none;
+}
+.criar label{
+    padding: 20px 10px;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.473);
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: linear 90ms;
+}
+.criar label:active{
+    transform: scale(0.990);
+    background-color: rgba(116, 116, 116, 0.644);
+}
+
+textarea{
+    padding: 15px;
+    resize: none;
+    font-size: 1.5em;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.377);
+    margin: 10px;
+}
+button{
+    padding: 5px;
+    font-size: 2em;
+    width: 200px;
+    border-radius: 20px;
+    border-style: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+    transition: linear 80ms;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    cursor: default;
+    transform: scale(0.98);
+    background-color: rgba(170, 170, 170, 0.486);
+}
 .anunciosetc{
+    min-width: 900px;
     padding: 20px;
     border-radius: 20px;
     background-color: rgb(142, 195, 226);
-    min-height: 700px;
+}
+.aded{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 20px;
 }

@@ -19,22 +19,27 @@
     </nav>
     <main>
         <div class="ntc">
-            <h1>teste1</h1>
-            <a href="novo/novo.html">
-                <div class="criar">
-                    <h3>Criar notícia</h3>
-                </div>
-            </a>
-            <div id="ad" class="adicionados">
+            <h1>Criar notícia</h1>
+            <div class="criar">
+                <input type="text" name="" id="titulo" placeholder="Título:"><br>
+                <div>
+                    <label for="img">Adicionar imagem</label>
+                    <input type="file" name="img" id="img" accept="image/*"></div><br>
+                    <!--   |video/*   -->
 
+                <textarea name="" id="texto" cols="50" rows="15" placeholder="Notícia:"></textarea><br>
+                <button type="submit" onclick="criar()">Criar</button>
             </div>
 
         </div>
         <div class="anunciosetc">
-            <h1>teste2</h1>
+            <h1>Notícias:</h1>
+            <div id="ad" class="adicionados">
+                
+            </div>
         </div>
     </main>
-    <script src="novo/crian.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
