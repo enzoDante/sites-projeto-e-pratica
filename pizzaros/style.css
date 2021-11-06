@@ -154,9 +154,14 @@ main h1{
     text-align: center;
 }
 #novidades{
-    display: flex;
+    /*display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    min-width: 200px;
+    max-width: 900px;
+    margin: auto;
 }
 .blocoNovidades{
     margin: 20px;
@@ -221,7 +226,7 @@ main h1{
 #sobres{
     background-color: #c9ae8c;
     min-width: 200px;
-    height: 100px;
+    min-height: 100px;
     text-indent: 10px;
     padding: 20px;
     box-shadow: 1px 2px 3px #74634f;
