@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaros</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylepage2.css">
+</head>
+<body>
+    <header>
+        <img src="../imagens/favcon-pizza.png" alt="imagem ícone de pizza">
+        <div>
+            <h1><span id="tverde">Pi</span>zza<span id="tvermelho">ros</span></h1>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <a href="../index.html" id="homeverde">Home</a>
+            <a href="#">Fazer pedido</a>
+            <a href="#" id="redesvermelho">Redes Sociais</a>
+        </div>
+        <div id="entra">
+            <!--autocomplete='off' exatamente o q está dizendo, não irá mostrar sugestões!-->
+            
+            <input type="text" name="" id="usuario" placeholder="Usuário:" autocomplete="off">
+            <input type="password" name="" id="senha-usuario" placeholder="Senha:">
+            <button type="submit" id="btnlogin" onclick="logar()">Login</button>
+        </div>
+        <script src="../login.js"></script>
+    </nav>
+
+    <main>
+        <div>
+            <h1 style="color: white;">Pedido</h1>
+
+            <select name="" id="pizzas">
+                <option value="p1">Sabor novo 01</option>
+                <option value="p2">Sabor novo 02</option>
+                <option value="p3">Sabor novo 03</option>
+                <option value="p4">Pizza01</option>
+                <option value="p5">Pizza02</option>
+                <option value="p6">Pizza03</option>
+                <option value="p7">Pizza04</option>
+            </select><br>
+            <button type="submit" id="adi" onclick="add()">Adicionar</button>
+            <div id="carrinho">
+
+            </div>
+
+            <div id="pagar">
+                <h2>Forma de pagamento</h2>
+                <input type="radio" name="pagamento" id="forma1" checked>
+                <label for="forma1">Forma1</label>
+                <input type="radio" name="pagamento" id="forma2">
+                <label for="forma2">Forma2</label>
+                <input type="radio" name="pagamento" id="forma3">
+                <label for="forma3">Forma3</label>
+                <input type="radio" name="pagamento" id="forma4">
+                <label for="forma4">forma4</label><br>
+                <button onclick="pagar()">Finalizar pedido</button>
+            </div>
+            <div id="finalizado">
+
+            </div>
+        </div>
+    </main>
+    <script src="pedido.js"></script>
+
+    <footer>
+        <p>Site criado por <span>Enzo Dante</span> &copy;</p>
+    </footer>
+    
+</body>
+</html>
