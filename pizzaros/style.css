@@ -86,6 +86,15 @@ input#usuario{
     font-family: var(--fontepadrao);
     border-radius: 5px;
 }
+input#loga{
+    position: absolute;
+    right: 65px;
+    font-size: 1.2em;
+    width: 170px;
+    background-color: #cfb38e;
+    font-family: var(--fontepadrao);
+    border-radius: 5px;
+}
 input#senha-usuario{
     position: absolute;
     right:65px;
