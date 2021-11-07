@@ -21,11 +21,14 @@
             <a href="#">Pedir</a>
             <a href="#" id="redesvermelho">Redes Sociais</a>
         </div>
-        <div>
-            <input type="text" name="" id="usuario" placeholder="Usuário:">
+        <div id="entra">
+            <!--autocomplete='off' exatamente o q está dizendo, não irá mostrar sugestões!-->
+            
+            <input type="text" name="" id="usuario" placeholder="Usuário:" autocomplete="off">
             <input type="password" name="" id="senha-usuario" placeholder="Senha:">
-            <button type="submit">Login</button>
+            <button type="submit" id="btnlogin" onclick="logar()">Login</button>
         </div>
+        <script src="login.js"></script>
     </nav>
 
     <main>
