@@ -41,9 +41,17 @@ header div{
 #tvermelho{
     color: red;
 }
+@media screen and (max-width: 500px){
+    header{
+        height: 120px;
+    }
+    header div{
+        font-size: 1em;
+    }
+}
 nav{
     min-width: 200px;
-    height: 50px;
+    min-height: 50px;
     background-color: #83684a;
     box-shadow: 1px 3px 2px #574532;
 }
@@ -101,6 +109,37 @@ input#senha-usuario{
     width: 170px;
     background-color: #cfb38e;
     border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+
+    nav a{
+        margin: auto;
+        display: block;
+        text-align: center;
+        width: 120px;
+        border-style: solid;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border-color: #cca778;
+    }
+    #nava{
+        min-width: 200px;
+        margin-left: -50px;
+        margin-right: -50px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background-color: #574532;
+    }
+    input#usuario, input#senha-usuario{
+        position: static;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: block;
+    }
+    nav{
+        padding: 50px;
+    }
 }
 main{
     min-width: 200px;
