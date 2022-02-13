@@ -2,7 +2,7 @@
  Praticas de criação de sites com HTML CSS e JS
  https://enzodante.github.io/sites-projeto-e-pratica/
 
-<a href="https://enzodante.github.io/sites-projeto-e-pratica/add-remove" target="_blank">add-remove</a><br>
+<a href="https://enzodante.github.io/sites-projeto-e-pratica/add-remove" target="_new">add-remove</a><br>
 <a href="https://enzodante.github.io/sites-projeto-e-pratica/criar-jogador-rpg" target="_blank">Criar jogador rpg</a><br>
 <a href="https://enzodante.github.io/sites-projeto-e-pratica/criar-personagens" target="_blank">criar personagens</a><br>
 <a href="https://enzodante.github.io/sites-projeto-e-pratica/imagem-inputF" target="_blank">imagem input F</a><br>
