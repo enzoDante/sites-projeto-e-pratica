@@ -1,0 +1,201 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #392947;
+}
+/* referencia: https://www.w3schools.com/css/css3_animations.asp */
+.nav{
+    min-width: 200px;
+    margin-bottom: 4vh;
+    background-color: #72518f;
+    padding: 20px;
+    min-height: 20px;
+}
+.blocos{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    display: inline-block;
+}
+/* mudar cor e volta ao original */
+#bloco1{    
+    background-color: red;
+    animation-name: bloco1;
+    animation-duration: 4s;
+}
+/* irá do vermelho até o amarelo e volta a ser vermelho */
+@keyframes bloco1{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+/* ================================================================ */
+/* muda algumas cores e volta ao original */
+#bloco2{
+    background-color: red;
+    animation-name: bloco2;
+    animation-duration: 4s;
+}
+/* vermelho até verde e volta a vermelho */
+@keyframes bloco2{
+    0%{background-color: red;}
+    25%{background-color: yellow;}
+    50%{background-color: blue;}
+    100%{background-color: green;}
+}
+/* ================================================================ */
+/* muda cor e desloca o bloco */
+#bloco3{
+    background-color: red;
+    position: relative;
+    animation-name: bloco3;
+    animation-duration: 4s;
+}
+/* fará o movimento('direita', 'direita_baixo','esquerda_baixo','esquerda_cima') */
+@keyframes bloco3{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: green; left: 0; top: 200px;}
+    100%{background-color: red; left: 0; top: 0;}
+}
+/* =================================================================== */
+/* mesma coisa acima, porém começa depois de 2segundos */
+#bloco4{
+    background-color: red;
+    position: relative;
+    animation-name: bloco4;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+/* tbm pode colocar delay negativo! */
+@keyframes bloco4{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: green; left: 0; top: 200px;}
+    100%{background-color: red; left: 0; top: 0;}
+}
+/* =================================================================== */
+/* mesma coisa acima, mas irá repetir 3 vezes */
+#bloco5{
+    background-color: red;
+    position: relative;
+    animation-name: bloco5;
+    animation-duration: 4s;
+    animation-iteration-count: 3; /*irá repetir 3 vezes*/
+}
+@keyframes bloco5{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: green; left: 0; top: 200px;}
+    100%{background-color: red; left: 0; top: 0;}
+}
+/* =================================================================== */
+#bloco6{
+    background-color: red;
+    position: relative;
+    animation-name: bloco6;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; /*irá repetir infinitamente*/
+}
+@keyframes bloco6{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: green; left: 0; top: 200px;}
+    100%{background-color: red; left: 0; top: 0;}
+}
+/* ===================================================================== */
+/* mesma coisa acima, porém, reverso */
+#bloco7{
+    background-color: red;
+    position: relative;
+    animation-name: bloco7;
+    animation-duration: 4s;
+    animation-direction: reverse; /*direção da animação (onde ela começa)*/
+    /* animation-direction: alternate; -- tbm tem o alternate-reverse
+    animation-iteration-count: 2; ---irá alternar a direção (tipo um vai e volta) */
+}
+@keyframes bloco7{
+    0%{background-color: red; left: 0px; top: 0px;}
+    25%{background-color: yellow; left: 200px; top: 0;}
+    50%{background-color: blue; left: 200px; top: 200px;}
+    75%{background-color: green; left: 0; top: 200px;}
+    100%{background-color: red; left: 0; top: 0;}
+}
+/* =========================================================================== */
+#nav3{
+    margin-top: 20vh;
+}
+.bloc1{
+    display: block;
+    background-color: red;
+    position: relative;
+    animation: mover 5s infinite; /*forma mais curta de animation*/
+}
+/* tipos de animação, o estilo dela, algo do tipo */
+#bloco81{animation-timing-function: linear;}
+#bloco82{animation-timing-function: ease;}
+#bloco83{animation-timing-function: ease-in;}
+#bloco84{animation-timing-function: ease-out;}
+#bloco85{animation-timing-function: ease-in-out;}
+@keyframes mover{
+    from{left: 0;}
+    to{left: 300px;}
+}
+/* ============================================================================ */
+.bloc2{
+    display: block;
+}
+#bloco9{
+    background-color: red;
+    position: relative;
+    animation-name: bloco9;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; /*mantém o elemento no final da animação*/
+}
+@keyframes bloco9{
+    from{left: 0;}
+    to{left: 300px; background-color: blue;}
+}
+/* =============================================================================== */
+#bloco10{
+    background-color: red;
+    position: relative;
+    animation-name: bloco10;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; /*volta ao início*/
+    /* animation-fill-mode: both; outro */
+}
+@keyframes bloco10{
+    from{left: 0; background-color: yellow;}
+    to{left: 200px;}
+}
+/* 
+div {
+  background-color: red;
+  position: relative;
+  animation-name: example; - nome
+  animation-duration: 5s; - duração
+  animation-timing-function: linear; - tipo
+  animation-delay: 2s; - momento q começa
+  animation-iteration-count: infinite; - quantas vezes repete
+  animation-direction: alternate; - direção
+  ou---------------------------------------------------
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+*/
+/* ================================================================================= */
